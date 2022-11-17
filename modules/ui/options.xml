@@ -31,7 +31,7 @@
     </Frame>
 
     <Frame name="LFGSpamFilter_Options" parent="UIParent" enableMouse="true" hidden="true" inherits="TooltipBackdropTemplate" frameStrata="DIALOG">
-        <Size x="192" y="285"/>
+        <Size x="192" y="320"/>
 
         <Anchors>
             <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="LFGSpamFilter_StatusButton" x="0" y="1"/>
@@ -110,6 +110,20 @@
                 </Frames>
             </Frame>
 
+            <Frame parentKey="NoWarMode" inherits="LFGSpamFilter_OptionsRowTemplate">
+                <KeyValues>
+                    <KeyValue key="label" value="war mode groups"/>
+                </KeyValues>
+
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-76"/>
+                </Anchors>
+
+                <Frames>
+                    <CheckButton parentKey="Checkbox" inherits="LFGSpamFilter_OptionsCheckboxTemplate"/>
+                </Frames>
+            </Frame>
+
             <Frame parentKey="MaxAge" inherits="LFGSpamFilter_OptionsRowTemplate">
                 <KeyValues>
                     <KeyValue key="label" value="hours max group age"/>
@@ -117,7 +131,7 @@
                 </KeyValues>
 
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-76"/>
+                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-122"/>
                 </Anchors>
 
                 <Frames>
@@ -150,7 +164,7 @@
                 </KeyValues>
 
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-122"/>
+                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-144"/>
                 </Anchors>
 
                 <Frames>
@@ -170,7 +184,7 @@
                 </KeyValues>
 
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-144"/>
+                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-190"/>
                 </Anchors>
 
                 <Frames>
@@ -184,7 +198,7 @@
                 </KeyValues>
 
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-190"/>
+                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-216"/>
                 </Anchors>
 
                 <Frames>
@@ -196,7 +210,7 @@
                 <Size x="73" y="20"/>
 
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-216"/>
+                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-250"/>
                 </Anchors>
 
                 <Scripts>
@@ -214,7 +228,7 @@
                 <Size x="73" y="20"/>
 
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="100" y="-216"/>
+                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="100" y="-250"/>
                 </Anchors>
 
                 <Scripts>
@@ -232,7 +246,7 @@
                 <Size x="151" y="20"/>
 
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-250"/>
+                    <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="22" y="-284"/>
                 </Anchors>
 
                 <Scripts>

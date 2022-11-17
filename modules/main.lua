@@ -107,6 +107,10 @@ function private.accept(info)
         info.voiceChat == ''
         or not addon.config.db.noVoice
     )
+    and (
+        not info.isWarMode
+        or not addon.config.db.noWarMode
+    )
 end
 
 function private.normalizePlayerName(name)

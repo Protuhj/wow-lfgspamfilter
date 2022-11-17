@@ -35,6 +35,7 @@ function private.getDefaultConfig()
         filterBanned = true,
         lastBan = nil,
         noVoice = false,
+        noWarMode = false,
         maxAge = 4 * 3600,
         lastMaintenance = time(),
         buttonTipShown = false,
@@ -156,6 +157,7 @@ private.migrations = {
         config.db.quickReport = nil
         config.db.report = nil
         config.db.noVoice = false
+        config.db.noWarMode = false
     end,
 
     [8] = function ()

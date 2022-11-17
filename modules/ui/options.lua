@@ -20,7 +20,10 @@ function options.load()
     )
 
     -- no voice
-    LFGSpamFilter_Options.NoVoice.Checkbox:SetChecked(addon.config.db.noVoice)
+    LFGSpamFilter_Options.NoVoice.Checkbox:SetChecked(addon.config.db.noVoice)    
+
+    -- no war mode
+    LFGSpamFilter_Options.NoWarMode.Checkbox:SetChecked(addon.config.db.noWarMode)
 
     -- max age
     if addon.config.db.maxAge then
@@ -46,6 +49,9 @@ function options.apply()
 
     -- no voice
     addon.config.db.noVoice = LFGSpamFilter_Options.NoVoice.Checkbox:GetChecked()
+
+    -- no war mode
+    addon.config.db.noWarMode = LFGSpamFilter_Options.NoWarMode.Checkbox:GetChecked()
 
     -- max age
     local maxAgeInput = tonumber(LFGSpamFilter_Options.MaxAge.EditBox:GetText())
