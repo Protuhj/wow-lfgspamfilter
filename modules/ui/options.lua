@@ -27,7 +27,7 @@ function options.load()
 
     -- max age
     if addon.config.db.maxAge then
-        LFGSpamFilter_Options.MaxAge.EditBox:SetText(tostring(addon.config.db.maxAge / 3600))
+        LFGSpamFilter_Options.MaxAge.EditBox:SetText(tostring(addon.config.db.maxAge / 60))
     else
         LFGSpamFilter_Options.MaxAge.EditBox:SetText('')
     end
@@ -57,7 +57,7 @@ function options.apply()
     local maxAgeInput = tonumber(LFGSpamFilter_Options.MaxAge.EditBox:GetText())
 
     if maxAgeInput and maxAgeInput >= 0 then
-        addon.config.db.maxAge = maxAgeInput * 3600
+        addon.config.db.maxAge = maxAgeInput * 60
     else
         addon.config.db.maxAge = nil
     end

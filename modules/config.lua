@@ -36,7 +36,7 @@ function private.getDefaultConfig()
         lastBan = nil,
         noVoice = false,
         noWarMode = false,
-        maxAge = 4 * 3600,
+        maxAge = 60 * 60,
         lastMaintenance = time(),
         buttonTipShown = false,
         reportHelper = true,

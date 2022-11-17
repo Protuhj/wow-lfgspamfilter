@@ -126,7 +126,7 @@
 
             <Frame parentKey="MaxAge" inherits="LFGSpamFilter_OptionsRowTemplate">
                 <KeyValues>
-                    <KeyValue key="label" value="hours max group age"/>
+                    <KeyValue key="label" value="max age, minutes"/>
                     <KeyValue key="labelOffset" value="13" type="number"/>
                 </KeyValues>
 
@@ -135,7 +135,7 @@
                 </Anchors>
 
                 <Frames>
-                    <EditBox parentKey="EditBox" inherits="InputBoxTemplate" autoFocus="false" letters="3">
+                    <EditBox parentKey="EditBox" inherits="InputBoxTemplate" autoFocus="false" letters="4">
                         <Size x="25" y="20"/>
 
                         <Anchors>
